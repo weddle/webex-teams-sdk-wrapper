@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryanweddle.sparksdkwrapper.SparkCall">
+
+
+    <com.webex.wseclient.WseSurfaceView
+        android:id="@+id/view_callremote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.webex.wseclient.WseSurfaceView
+        android:id="@+id/view_calllocal"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_callremote"
+        app:layout_constraintTop_toTopOf="@+id/view_callremote" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/group_buttons"
+        android:layout_width="182dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_mute"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/group_buttons"
+            app:layout_constraintStart_toStartOf="@+id/group_buttons"
+            app:srcCompat="@drawable/mute3x" />
+
+        <ImageButton
+            android:id="@+id/button_hangup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/group_buttons"
+            app:layout_constraintEnd_toStartOf="@+id/button_rotate"
+            app:layout_constraintStart_toEndOf="@+id/button_mute"
+            app:srcCompat="@drawable/hangup3x" />
+
+        <ImageButton
+            android:id="@+id/button_rotate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/group_buttons"
+            app:layout_constraintEnd_toEndOf="@+id/group_buttons"
+            app:srcCompat="@drawable/rotate3x" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
