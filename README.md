@@ -18,10 +18,42 @@ This library can be used in three ways:
 
 ### JitPack instructions
 
+[![Release](https://jitpack.io/v/weddle/webex-teams-sdk-wrapper.svg)]
+(https://jitpack.io/#weddle/webex-teams-sdk-wrapper)
+
 This module is available through JitPack.  In order to include this module in your Android Studio project, do the following:
 
+In your root build.gradle, add the following:
+
 ```
-need to update
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Add the dependencies to your application build.gradle
+```
+dependencies {
+    compile('com.ciscospark:androidsdk:1.3.0@aar', {
+        transitive = true
+    })
+    implementation 'com.github.weddle:webex-teams-sdk-wrapper:v0.2'
+}
+```
+
+Make sure to declare permissions in your AndroidManifest.xml
+```
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 ```
 
 
