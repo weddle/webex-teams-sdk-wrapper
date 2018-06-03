@@ -9,6 +9,8 @@ This wrapper handles layout of the video streams for local and remote participan
 
 What this means is that you only need to declare permissions and start the SparkCall activity with an intent, passing in the TeamsID to call as well as the [Guest Token (JWT)](https://developer.webex.com/guest-issuer.html) for your application.
 
+To see an example of how to import and use this wrapper, please refer to the accompanying [Webex Teams Android SDK Wrapper Sample](https://github.com/weddle/webex-teams-sdk-wrapper-sample) Application.
+
 ## Requirements
 
 This library can be used in three ways:
@@ -60,7 +62,7 @@ Make sure to declare permissions in your AndroidManifest.xml
 ## Implementation
 The Webex Teams SDK Wrapper uses an Activity as a drop in to display the Video call.  You will need to start the activity by passing an intent with your Guest Token and the TeamsID to call.
 
-You can look at the sample MainActivity of the sample app to see how this is done.  In this case, the onClick listener invokes the SparkCall activity by intent.
+You can look at the [Sample Application's](https://github.com/weddle/webex-teams-sdk-wrapper-sample) MainActivity of the sample app to see how this is done.  In this case, the onClick listener invokes the SparkCall activity by intent.
 
 ```
 Intent intent = new Intent(MainActivity.this, SparkCall.class);
