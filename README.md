@@ -1,4 +1,5 @@
 [![Release](https://jitpack.io/v/weddle/webex-teams-sdk-wrapper.svg)](https://jitpack.io/#weddle/webex-teams-sdk-wrapper)
+[![LICENSE](https://img.shields.io/github/license/weddle/webex-teams-sdk-wrapper.svg)](https://github.com/weddle/webex-teams-sdk-wrapper/blob/master/LICENSE)
 # Webex Teams Android SDK Wrapper
 
 ## Embed video calling capabilities into your Android App in just a few lines of code
