@@ -1,6 +1,9 @@
 [![Release](https://jitpack.io/v/weddle/webex-teams-sdk-wrapper.svg)](https://jitpack.io/#weddle/webex-teams-sdk-wrapper)
 [![LICENSE](https://img.shields.io/github/license/weddle/webex-teams-sdk-wrapper.svg)](https://github.com/weddle/webex-teams-sdk-wrapper/blob/master/LICENSE)
-[![Example](https://img.shields.io/badge/Example-webex--teams--sdk--wrapper--sample-blue.svg)](https://github.com/weddle/webex-teams-sdk-wrapper-sample)
+[![Related Sample](https://img.shields.io/badge/related-sample--app-blue.svg)](https://github.com/weddle/webex-teams-sdk-wrapper-sample)
+[![Related Lab](https://img.shields.io/badge/related-tutorial-blue.svg)](https://github.com/weddle/webex-teams-sdk-wrapper-lab)
+[![Official SDK](https://img.shields.io/badge/related-official--sdk-blue.svg)](https://github.com/webex/spark-android-sdk)
+
 # Webex Teams Android SDK Wrapper
 
 ## Embed video calling capabilities into your Android App in just a few lines of code
