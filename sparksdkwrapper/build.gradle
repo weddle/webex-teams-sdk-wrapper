@@ -28,15 +28,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    
-    splits {
-        abi {
-            enable true
-            reset()
-            include 'x86', 'armeabi-v7a'
-            universalApk true
-        }
-    }
 }
 
 dependencies {
